@@ -19,6 +19,15 @@
         </style>
     </head>
     <body>
+        <script>
+            var para = document.querySelector('p');
+            para.addEventListener('click', atualizarNome);
+
+            function atualizarNome() {
+                var nome = prompt('Digite um nome: ');
+                para.TextContent = 'Jogador:'+nome;
+            }
+        </script>
         <p>
             Jogador
         </p>
